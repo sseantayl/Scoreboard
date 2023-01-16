@@ -1,0 +1,218 @@
+/* Defining some core colors for the project */
+:root {
+    --gray-50: #F8FAFC;
+    --gray-100: #F1F5F9;
+    --gray-200: #E2E8F0;
+    --gray-300: #CBD5E1;
+    --gray-400: #94A3B8;
+    --gray-500: #64748B;
+    --gray-600: #475569;
+    --gray-700: #334155;
+    --gray-800: #1E293B;
+    --gray-900: #0F172A;
+    --primary-50: #EEF2FF;
+    --primary-100: #E0E7FF;
+    --primary-200: #C7D2FE;
+    --primary-300: #A5B4FC;
+    --primary-400: #818CF8;
+    --primary-500: #6366F1;
+    --secondary-50: #F5F3FF;
+    --secondary-100: #EDE9FE;
+    --secondary-200: #DDD6FE;
+    --secondary-300: #C4B5FD;
+    --secondary-400: #A78BFA;
+    --secondary-500: #8B5CF6;
+    
+    --secondary-color: #F43F5E;
+    --success-color: #10B981;
+}
+
+/* Unstlying buttons */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+  border: none;
+}
+
+/* Unstyling the headings and paragraphs */
+h1, h2, h3, h4, h5, p {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+body {
+    margin: 0;    
+    background-color: white;
+}
+
+/* structure */
+.section{
+    padding: 2.5rem 0rem;;
+    display: flex;
+}
+
+.container{
+    margin: 0rem auto;
+    max-width: 768px;
+    width: 100%;
+    padding: 0rem 1.5rem;
+}
+
+.child-wrap{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.child{
+    width: 100%;
+    min-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--primary-500);
+    border-radius: 1rem;
+    box-shadow: 0px 8px 16px var(--gray-300);
+}
+
+.child-heading{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.child-score-wrap{
+    border: 1px solid var(--gray-200);
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.child-score{
+    font-size: 4rem;
+    color: var(--primary-500);
+}
+
+.child-score.is--secondary{
+    color: var(--secondary-500);
+}
+
+/* This class is added to the current leader*/
+.child-score--winning{ 
+    color: var(--success-color);
+}
+
+.child-button-wrap{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.child-button-heading{
+    font-size: .875rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.child-button-children{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: white;
+    padding: 1rem;
+    transition: .2s ease-in-out;
+    box-shadow: 0px 2px 6px var(--primary-200);
+    border-radius: 4px;
+    color: var(--gray-500);
+}
+
+.btn:hover{
+    box-shadow: 0px 4px 6px var(--primary-400);   
+    color: var(--gray-800)
+    
+}
+
+.btn-secondary{
+    box-shadow: 0px 2px 6px var(--secondary-200);    
+}
+
+.btn-secondary:hover{
+    box-shadow: 0px 4px 6px var(--secondary-400);   
+    color: var(--gray-800)
+    
+}
+
+
+
+
+/* mobile styles */ 
+@media screen and (max-width: 560px) {
+  .child-wrap{
+      flex-direction: column;
+      gap: 2.5rem;
+  }
+}
+
+
+
+/* Utility classes */
+.bg-primary-50{
+    background-color: var(--primary-50);    
+}
+
+.bg-primary-100{
+    background-color: var(--primary-100);    
+}
+
+.bg-primary-200{
+    background-color: var(--primary-200);    
+}
+
+.bg-primary-300{
+    background-color: var(--primary-300);    
+}
+
+.bg-primary-400{
+    background-color: var(--primary-400);    
+}
+
+.bg-primary-500{
+    background-color: var(--primary-500);    
+}
+
+.bg-secondary-50{
+    background-color: var(--secondary-50);    
+}
+
+.bg-secondary-100{
+    background-color: var(--secondary-100);    
+}
+
+.bg-secondary-200{
+    background-color: var(--secondary-200);    
+}
+
+.bg-secondary-300{
+    background-color: var(--secondary-300);    
+}
+
+.bg-secondary-400{
+    background-color: var(--secondary-400);    
+}
+
+.bg-secondary-500{
+    background-color: var(--secondary-500);    
+}

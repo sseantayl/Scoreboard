@@ -1,0 +1,60 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        <div class="section">
+            <div class="container">
+                <div class="child-wrap">
+                
+                    <!--child-->
+                    <div class="child">
+                        <div class="child-heading-wrap">
+                            <h2 class="child-heading">Home</h2>
+                        </div>
+                        <div class="child-score-wrap">
+                            <p id="home-score" class="child-score">1</p>
+                        </div>
+                        <div class="child-button-wrap">
+                            <div class="child-button-heading-wrap">
+                                <h3 class="child-button-heading">Add score</h3>
+                            </div>
+                            <div class="child-button-children">
+                                <button class="btn" onclick="homeAdd1()">+1</button>
+                                <button class="btn" onclick="homeAdd2()">+2</button>
+                                <button class="btn" onclick="homeAdd3()">+3</button>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    <!--child end-->
+                    
+                    <!--child-->
+                    <div class="child bg-secondary-500">
+                        <div class="child-heading-wrap">
+                            <h2 class="child-heading">Guest</h2>
+                        </div>
+                        <div class="child-score-wrap">
+                            <p id="guest-score" class="child-score is--secondary">1</p>
+                            
+                        </div>
+                         <div class="child-button-wrap">
+                            <div class="child-button-heading-wrap">
+                                <h3 class="child-button-heading">Add score</h3>
+                            </div>
+                            <div class="child-button-children">
+                                <button class="btn btn-secondary" onclick="guestAdd1()">+1</button>
+                                <button class="btn btn-secondary" onclick="guestAdd2()">+2</button>
+                                <button class="btn btn-secondary" onclick="guestAdd3()">+3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--child end-->
+                    
+                </div> <!--child wrap end-->                 
+            </div> <!-- container end-->
+        </div> <!-- section end -->
+        <script src="index.js"></script>
+    </body>
+</html>
